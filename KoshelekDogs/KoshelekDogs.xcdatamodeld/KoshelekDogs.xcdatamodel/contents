@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DogCoreData" representedClassName="DogCoreData" syncable="YES" codeGenerationType="class">
+        <attribute name="breed" optional="YES" attributeType="String"/>
+        <attribute name="urls" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+    </entity>
+    <elements>
+        <element name="DogCoreData" positionX="-63" positionY="-18" width="128" height="73"/>
+    </elements>
+</model>

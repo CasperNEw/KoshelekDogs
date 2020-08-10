@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		715C375DDFBA5112BE12C13D /* Pods_KoshelekDogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4252365B4CA2D9501BCD79 /* Pods_KoshelekDogs.framework */; };
+		DA40C5FB24DFF22C00128D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C5FA24DFF22C00128D06 /* AppDelegate.swift */; };
+		DA40C5FD24DFF22C00128D06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C5FC24DFF22C00128D06 /* SceneDelegate.swift */; };
+		DA40C60524DFF22C00128D06 /* KoshelekDogs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA40C60324DFF22C00128D06 /* KoshelekDogs.xcdatamodeld */; };
+		DA40C60724DFF23100128D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA40C60624DFF23100128D06 /* Assets.xcassets */; };
+		DA40C60A24DFF23100128D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA40C60824DFF23100128D06 /* LaunchScreen.storyboard */; };
+		DA40C61B24E0EE7800128D06 /* MainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C61624E0EE7800128D06 /* MainListViewModel.swift */; };
+		DA40C61C24E0EE7800128D06 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C61724E0EE7800128D06 /* MainListViewController.swift */; };
+		DA40C61D24E0EE7800128D06 /* MainListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C61824E0EE7800128D06 /* MainListConfigurator.swift */; };
+		DA40C61E24E0EE7800128D06 /* MainListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C61924E0EE7800128D06 /* MainListRouter.swift */; };
+		DA40C61F24E0EE7800128D06 /* MainListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA40C61A24E0EE7800128D06 /* MainListViewController.xib */; };
+		DA40C62324E0F2F600128D06 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C62224E0F2F600128D06 /* UIViewController+.swift */; };
+		DA40C62624E0F34E00128D06 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C62524E0F34E00128D06 /* String+.swift */; };
+		DA40C62824E0F39600128D06 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C62724E0F39600128D06 /* UIButton+.swift */; };
+		DA40C62B24E0F6BA00128D06 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C62A24E0F6BA00128D06 /* NetworkService.swift */; };
+		DA40C62D24E0F80E00128D06 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C62C24E0F80E00128D06 /* UILabel+.swift */; };
+		DA40C63124E0FADD00128D06 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C63024E0FADD00128D06 /* NetworkError.swift */; };
+		DA40C63424E0FB7F00128D06 /* DogsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C63324E0FB7F00128D06 /* DogsResponse.swift */; };
+		DA40C63624E0FD5800128D06 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C63524E0FD5800128D06 /* Dog.swift */; };
+		DA40C63A24E1014E00128D06 /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C63824E1014E00128D06 /* DogTableViewCell.swift */; };
+		DA40C63B24E1014E00128D06 /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA40C63924E1014E00128D06 /* DogTableViewCell.xib */; };
+		DA40C63E24E10F0F00128D06 /* SubBreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C63D24E10F0F00128D06 /* SubBreedViewController.swift */; };
+		DA40C64524E1207200128D06 /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C64024E1207200128D06 /* ImagesViewModel.swift */; };
+		DA40C64624E1207200128D06 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C64124E1207200128D06 /* ImagesViewController.swift */; };
+		DA40C64724E1207200128D06 /* ImagesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C64224E1207200128D06 /* ImagesConfigurator.swift */; };
+		DA40C64924E1207200128D06 /* ImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA40C64424E1207200128D06 /* ImagesViewController.xib */; };
+		DA40C64D24E1210800128D06 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C64B24E1210800128D06 /* ImageCollectionViewCell.swift */; };
+		DA40C64E24E1210800128D06 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA40C64C24E1210800128D06 /* ImageCollectionViewCell.xib */; };
+		DA40C65024E12A8800128D06 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40C64F24E12A8800128D06 /* ImageResponse.swift */; };
+		DAEDB83A24E141AF003C02B5 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDB83924E141AF003C02B5 /* FavoriteRepository.swift */; };
+		DAEDB83C24E14EA8003C02B5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDB83B24E14EA8003C02B5 /* Image.swift */; };
+		DAEDB83E24E16052003C02B5 /* FavoriteDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDB83D24E16052003C02B5 /* FavoriteDog.swift */; };
+		DAEDB84024E16C5C003C02B5 /* FavoriteImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDB83F24E16C5C003C02B5 /* FavoriteImagesViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		246832E3FD9ADCCAFC4EE759 /* Pods-KoshelekDogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoshelekDogs.release.xcconfig"; path = "Target Support Files/Pods-KoshelekDogs/Pods-KoshelekDogs.release.xcconfig"; sourceTree = "<group>"; };
+		AA4252365B4CA2D9501BCD79 /* Pods_KoshelekDogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoshelekDogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA40C5F724DFF22C00128D06 /* KoshelekDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoshelekDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA40C5FA24DFF22C00128D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA40C5FC24DFF22C00128D06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA40C60424DFF22C00128D06 /* KoshelekDogs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KoshelekDogs.xcdatamodel; sourceTree = "<group>"; };
+		DA40C60624DFF23100128D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA40C60924DFF23100128D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA40C60B24DFF23100128D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA40C61624E0EE7800128D06 /* MainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewModel.swift; sourceTree = "<group>"; };
+		DA40C61724E0EE7800128D06 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
+		DA40C61824E0EE7800128D06 /* MainListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListConfigurator.swift; sourceTree = "<group>"; };
+		DA40C61924E0EE7800128D06 /* MainListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListRouter.swift; sourceTree = "<group>"; };
+		DA40C61A24E0EE7800128D06 /* MainListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainListViewController.xib; sourceTree = "<group>"; };
+		DA40C62224E0F2F600128D06 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		DA40C62524E0F34E00128D06 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		DA40C62724E0F39600128D06 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		DA40C62A24E0F6BA00128D06 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DA40C62C24E0F80E00128D06 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		DA40C63024E0FADD00128D06 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DA40C63324E0FB7F00128D06 /* DogsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsResponse.swift; sourceTree = "<group>"; };
+		DA40C63524E0FD5800128D06 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		DA40C63824E1014E00128D06 /* DogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
+		DA40C63924E1014E00128D06 /* DogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogTableViewCell.xib; sourceTree = "<group>"; };
+		DA40C63D24E10F0F00128D06 /* SubBreedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubBreedViewController.swift; sourceTree = "<group>"; };
+		DA40C64024E1207200128D06 /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
+		DA40C64124E1207200128D06 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		DA40C64224E1207200128D06 /* ImagesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesConfigurator.swift; sourceTree = "<group>"; };
+		DA40C64424E1207200128D06 /* ImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesViewController.xib; sourceTree = "<group>"; };
+		DA40C64B24E1210800128D06 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA40C64C24E1210800128D06 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		DA40C64F24E12A8800128D06 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
+		DAEDB83924E141AF003C02B5 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		DAEDB83B24E14EA8003C02B5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DAEDB83D24E16052003C02B5 /* FavoriteDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDog.swift; sourceTree = "<group>"; };
+		DAEDB83F24E16C5C003C02B5 /* FavoriteImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImagesViewModel.swift; sourceTree = "<group>"; };
+		F4FBCC3527D067FBD3EBF268 /* Pods-KoshelekDogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoshelekDogs.debug.xcconfig"; path = "Target Support Files/Pods-KoshelekDogs/Pods-KoshelekDogs.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA40C5F424DFF22C00128D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715C375DDFBA5112BE12C13D /* Pods_KoshelekDogs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1EDA2C676E4E451AAB0EBE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4FBCC3527D067FBD3EBF268 /* Pods-KoshelekDogs.debug.xcconfig */,
+				246832E3FD9ADCCAFC4EE759 /* Pods-KoshelekDogs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2915E28888C2111F2A0687A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA4252365B4CA2D9501BCD79 /* Pods_KoshelekDogs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA40C5EE24DFF22C00128D06 = {
+			isa = PBXGroup;
+			children = (
+				DA40C5F924DFF22C00128D06 /* KoshelekDogs */,
+				DA40C5F824DFF22C00128D06 /* Products */,
+				A1EDA2C676E4E451AAB0EBE1 /* Pods */,
+				D2915E28888C2111F2A0687A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA40C5F824DFF22C00128D06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C5F724DFF22C00128D06 /* KoshelekDogs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA40C5F924DFF22C00128D06 /* KoshelekDogs */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C5FA24DFF22C00128D06 /* AppDelegate.swift */,
+				DA40C5FC24DFF22C00128D06 /* SceneDelegate.swift */,
+				DA40C61424E0EE4000128D06 /* Modules */,
+				DA40C62924E0F6A400128D06 /* Services */,
+				DAEDB83724E14195003C02B5 /* Database */,
+				DA40C63224E0FB1300128D06 /* Models */,
+				DA40C62F24E0FACD00128D06 /* Errors */,
+				DA40C62024E0F2DE00128D06 /* Extensions */,
+				DA40C60624DFF23100128D06 /* Assets.xcassets */,
+				DA40C60824DFF23100128D06 /* LaunchScreen.storyboard */,
+				DA40C60B24DFF23100128D06 /* Info.plist */,
+				DA40C60324DFF22C00128D06 /* KoshelekDogs.xcdatamodeld */,
+			);
+			path = KoshelekDogs;
+			sourceTree = "<group>";
+		};
+		DA40C61424E0EE4000128D06 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C63F24E1205F00128D06 /* Images */,
+				DA40C63C24E10EEA00128D06 /* SubBreed */,
+				DA40C61524E0EE4900128D06 /* MainList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DA40C61524E0EE4900128D06 /* MainList */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C63724E1013B00128D06 /* Cells */,
+				DA40C61824E0EE7800128D06 /* MainListConfigurator.swift */,
+				DA40C61924E0EE7800128D06 /* MainListRouter.swift */,
+				DA40C61724E0EE7800128D06 /* MainListViewController.swift */,
+				DA40C61A24E0EE7800128D06 /* MainListViewController.xib */,
+				DA40C61624E0EE7800128D06 /* MainListViewModel.swift */,
+			);
+			path = MainList;
+			sourceTree = "<group>";
+		};
+		DA40C62024E0F2DE00128D06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C62424E0F34300128D06 /* Foundation */,
+				DA40C62124E0F2E700128D06 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA40C62124E0F2E700128D06 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C62224E0F2F600128D06 /* UIViewController+.swift */,
+				DA40C62724E0F39600128D06 /* UIButton+.swift */,
+				DA40C62C24E0F80E00128D06 /* UILabel+.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DA40C62424E0F34300128D06 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C62524E0F34E00128D06 /* String+.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DA40C62924E0F6A400128D06 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C62A24E0F6BA00128D06 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA40C62F24E0FACD00128D06 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C63024E0FADD00128D06 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		DA40C63224E0FB1300128D06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C63324E0FB7F00128D06 /* DogsResponse.swift */,
+				DA40C63524E0FD5800128D06 /* Dog.swift */,
+				DA40C64F24E12A8800128D06 /* ImageResponse.swift */,
+				DAEDB83B24E14EA8003C02B5 /* Image.swift */,
+				DAEDB83D24E16052003C02B5 /* FavoriteDog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA40C63724E1013B00128D06 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C63824E1014E00128D06 /* DogTableViewCell.swift */,
+				DA40C63924E1014E00128D06 /* DogTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DA40C63C24E10EEA00128D06 /* SubBreed */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C63D24E10F0F00128D06 /* SubBreedViewController.swift */,
+			);
+			path = SubBreed;
+			sourceTree = "<group>";
+		};
+		DA40C63F24E1205F00128D06 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C64A24E120EE00128D06 /* Cells */,
+				DA40C64224E1207200128D06 /* ImagesConfigurator.swift */,
+				DA40C64124E1207200128D06 /* ImagesViewController.swift */,
+				DA40C64424E1207200128D06 /* ImagesViewController.xib */,
+				DA40C64024E1207200128D06 /* ImagesViewModel.swift */,
+				DAEDB83F24E16C5C003C02B5 /* FavoriteImagesViewModel.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DA40C64A24E120EE00128D06 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DA40C64B24E1210800128D06 /* ImageCollectionViewCell.swift */,
+				DA40C64C24E1210800128D06 /* ImageCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DAEDB83724E14195003C02B5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DAEDB83824E1419B003C02B5 /* CoreData */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		DAEDB83824E1419B003C02B5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DAEDB83924E141AF003C02B5 /* FavoriteRepository.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA40C5F624DFF22C00128D06 /* KoshelekDogs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA40C60E24DFF23100128D06 /* Build configuration list for PBXNativeTarget "KoshelekDogs" */;
+			buildPhases = (
+				B662DF47F004E018729FEEA8 /* [CP] Check Pods Manifest.lock */,
+				DA40C5F324DFF22C00128D06 /* Sources */,
+				DA40C5F424DFF22C00128D06 /* Frameworks */,
+				DA40C5F524DFF22C00128D06 /* Resources */,
+				DA40C61124DFF33C00128D06 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoshelekDogs;
+			productName = KoshelekDogs;
+			productReference = DA40C5F724DFF22C00128D06 /* KoshelekDogs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA40C5EF24DFF22C00128D06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Дмитрий Константинов";
+				TargetAttributes = {
+					DA40C5F624DFF22C00128D06 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = DA40C5F224DFF22C00128D06 /* Build configuration list for PBXProject "KoshelekDogs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA40C5EE24DFF22C00128D06;
+			productRefGroup = DA40C5F824DFF22C00128D06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA40C5F624DFF22C00128D06 /* KoshelekDogs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA40C5F524DFF22C00128D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA40C64924E1207200128D06 /* ImagesViewController.xib in Resources */,
+				DA40C61F24E0EE7800128D06 /* MainListViewController.xib in Resources */,
+				DA40C60A24DFF23100128D06 /* LaunchScreen.storyboard in Resources */,
+				DA40C63B24E1014E00128D06 /* DogTableViewCell.xib in Resources */,
+				DA40C64E24E1210800128D06 /* ImageCollectionViewCell.xib in Resources */,
+				DA40C60724DFF23100128D06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B662DF47F004E018729FEEA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoshelekDogs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA40C61124DFF33C00128D06 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA40C5F324DFF22C00128D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA40C64524E1207200128D06 /* ImagesViewModel.swift in Sources */,
+				DA40C63E24E10F0F00128D06 /* SubBreedViewController.swift in Sources */,
+				DA40C62B24E0F6BA00128D06 /* NetworkService.swift in Sources */,
+				DA40C60524DFF22C00128D06 /* KoshelekDogs.xcdatamodeld in Sources */,
+				DA40C64624E1207200128D06 /* ImagesViewController.swift in Sources */,
+				DA40C61E24E0EE7800128D06 /* MainListRouter.swift in Sources */,
+				DA40C62624E0F34E00128D06 /* String+.swift in Sources */,
+				DA40C5FB24DFF22C00128D06 /* AppDelegate.swift in Sources */,
+				DA40C61C24E0EE7800128D06 /* MainListViewController.swift in Sources */,
+				DA40C62D24E0F80E00128D06 /* UILabel+.swift in Sources */,
+				DAEDB83A24E141AF003C02B5 /* FavoriteRepository.swift in Sources */,
+				DA40C63424E0FB7F00128D06 /* DogsResponse.swift in Sources */,
+				DA40C64D24E1210800128D06 /* ImageCollectionViewCell.swift in Sources */,
+				DA40C63624E0FD5800128D06 /* Dog.swift in Sources */,
+				DA40C64724E1207200128D06 /* ImagesConfigurator.swift in Sources */,
+				DA40C62324E0F2F600128D06 /* UIViewController+.swift in Sources */,
+				DA40C62824E0F39600128D06 /* UIButton+.swift in Sources */,
+				DAEDB83E24E16052003C02B5 /* FavoriteDog.swift in Sources */,
+				DAEDB84024E16C5C003C02B5 /* FavoriteImagesViewModel.swift in Sources */,
+				DA40C61D24E0EE7800128D06 /* MainListConfigurator.swift in Sources */,
+				DA40C63124E0FADD00128D06 /* NetworkError.swift in Sources */,
+				DA40C5FD24DFF22C00128D06 /* SceneDelegate.swift in Sources */,
+				DA40C65024E12A8800128D06 /* ImageResponse.swift in Sources */,
+				DA40C63A24E1014E00128D06 /* DogTableViewCell.swift in Sources */,
+				DA40C61B24E0EE7800128D06 /* MainListViewModel.swift in Sources */,
+				DAEDB83C24E14EA8003C02B5 /* Image.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA40C60824DFF23100128D06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA40C60924DFF23100128D06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA40C60C24DFF23100128D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA40C60D24DFF23100128D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA40C60F24DFF23100128D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4FBCC3527D067FBD3EBF268 /* Pods-KoshelekDogs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V343AH88RK;
+				INFOPLIST_FILE = KoshelekDogs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CasperNEw.KoshelekDogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA40C61024DFF23100128D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246832E3FD9ADCCAFC4EE759 /* Pods-KoshelekDogs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V343AH88RK;
+				INFOPLIST_FILE = KoshelekDogs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CasperNEw.KoshelekDogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA40C5F224DFF22C00128D06 /* Build configuration list for PBXProject "KoshelekDogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA40C60C24DFF23100128D06 /* Debug */,
+				DA40C60D24DFF23100128D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA40C60E24DFF23100128D06 /* Build configuration list for PBXNativeTarget "KoshelekDogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA40C60F24DFF23100128D06 /* Debug */,
+				DA40C61024DFF23100128D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA40C60324DFF22C00128D06 /* KoshelekDogs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA40C60424DFF22C00128D06 /* KoshelekDogs.xcdatamodel */,
+			);
+			currentVersion = DA40C60424DFF22C00128D06 /* KoshelekDogs.xcdatamodel */;
+			path = KoshelekDogs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA40C5EF24DFF22C00128D06 /* Project object */;
+}

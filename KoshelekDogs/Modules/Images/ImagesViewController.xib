@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImagesViewController" customModule="KoshelekDogs" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="SS4-tR-gVP" id="QvG-Ge-JB5"/>
+                <outlet property="collectionView" destination="7p6-qv-oh5" id="JUK-PG-ljh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Rz8-f9-Cv3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7p6-qv-oh5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OJw-8O-QrU">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="SS4-tR-gVP">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7p6-qv-oh5" secondAttribute="trailing" id="9eR-BJ-YQz"/>
+                <constraint firstItem="7p6-qv-oh5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CO2-E8-12H"/>
+                <constraint firstItem="SS4-tR-gVP" firstAttribute="centerX" secondItem="7p6-qv-oh5" secondAttribute="centerX" id="Cpl-gj-pWh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7p6-qv-oh5" secondAttribute="bottom" id="dFe-eg-XxN"/>
+                <constraint firstItem="7p6-qv-oh5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mxj-DD-feP"/>
+                <constraint firstItem="SS4-tR-gVP" firstAttribute="centerY" secondItem="7p6-qv-oh5" secondAttribute="centerY" id="zNx-em-G1X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="136.80000000000001" y="142.57871064467767"/>
+        </view>
+    </objects>
+</document>
