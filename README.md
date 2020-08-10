@@ -19,4 +19,4 @@ The likes state should persist after exiting the app. Add a loader while waiting
 
 It took me about 8-10 hours to create and debug the application. The desire to do any test tasks begins to fall strongly ... ) The employer estimated this task at 3 hours, and I, by my naivety, believed him) Now I will get rid of the debts accumulated during this time ... )
 
-<img src="/source/firstScreen.jpg" alt="first screen"/> <img src="/source/secondScreen.jpg" alt="second screen"/>
+<img src="/source/firstScreen.png" alt="first screen"/> <img src="/source/secondScreen.png" alt="second screen"/>
